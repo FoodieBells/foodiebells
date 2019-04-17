@@ -170,22 +170,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     : Colors.white), //
             new ListTile(
               title: new Text('Offer Zone',style: TextStyle(color: Colors.white),),
-              leading: new Icon(Icons.local_offer),
+              leading: new Icon(Icons.local_offer,color: Colors.white),
             ), //List Tile 5
             new ListTile(
               title: new Text('My Cart',style: TextStyle(color: Colors.white),),
-              leading: new Icon(Icons.shopping_cart),
+              leading: new Icon(Icons.shopping_cart,color: Colors.white),
               onTap: (){},
             ), //List Tile 6
             new ListTile(
               title: new Text('My Wishlist',style: TextStyle(color: Colors.white),),
-              leading: new Icon(Icons.favorite),
+              leading: new Icon(Icons.favorite,color: Colors.white),
             ),
             new AboutListTile(
-              applicationIcon: FlutterLogo(
-                colors: Colors.blueGrey,
-              ),
-              icon: Icon(Icons.info),
+              applicationIcon: Image.network("https://avatars0.githubusercontent.com/u/46907556?s=200&v=4",color: Colors.pink,width: MediaQuery.of(context).size.width/3,),
+              icon: Icon(Icons.info,color: Colors.white,),
               aboutBoxChildren: <Widget>[
                 SizedBox(
                   height: 10.0,
@@ -197,9 +195,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   "pranavkapoorr",style: TextStyle(color: Colors.white)
                 ),
               ],
-              applicationName: "FoodieBells",
+              applicationName: "Foodie Bells",
               applicationVersion: "1.0.0",
               applicationLegalese: "Apache License 2.0",
+              child: Text("About",style: TextStyle(color: Colors.white)),
 
             )
           ],
